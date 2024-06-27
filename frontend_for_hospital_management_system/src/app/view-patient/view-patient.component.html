@@ -1,0 +1,61 @@
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">   
+  <a style="color: white;" class="navbar-brand" href="#">RAJNANDINI'S HEALTHCARE</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a style="color: white;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/docdash">BACK</a>
+          </li>
+          <li class="nav-item">
+              <a style="color: white;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="update-patient/:id">UPDATE PATIENT DETAILS</a>
+          </li>
+      </ul>
+      <div class="mx-2">
+          <button style="margin: 5px;" class="btn btn-danger" data-toggle="modal" data-target="#loginModal">
+              <a style="color:white;" href="javascript:void(0);" routerLink="/home">Logout</a>
+          </button>
+      </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Patient Details</h2>
+  <table class="table">
+      <tbody>
+          <tr style="background-color: #f62626;">
+              <th>Attribute</th>
+              <th>Details</th>
+          </tr>
+          <tr style="background-color: #531ace;">
+              <td>ID</td>
+              <td>{{ patient.id }}</td>
+          </tr>
+          <tr style="background-color: #e9e9e9;">
+              <td>NAME</td>
+              <td>{{ patient.name }}</td>
+          </tr>
+          <tr style="background-color: #f9f9f9;">
+              <td>AGE</td>
+              <td>{{ patient.age }}</td>
+          </tr>
+          <tr style="background-color: #e9e9e9;">
+              <td>BLOOD-GROUP</td>
+              <td>{{ patient.blood }}</td>
+          </tr>
+          <tr style="background-color: #29a849;">
+              <td>DOSE</td>
+              <td>{{ patient.dose }}</td>
+          </tr>
+          <tr style="background-color: #e9e9e9;">
+              <td>PRESCRIPTION</td>
+              <td>{{ patient.prescription }}</td>
+          </tr>
+          <tr style="background-color: #f9f9f9;">
+              <td>URGENCY</td>
+              <td>{{ patient.urgency }}</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
